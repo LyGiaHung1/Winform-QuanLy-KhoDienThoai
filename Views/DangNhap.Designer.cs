@@ -40,9 +40,10 @@
             // label1
             // 
             label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(831, 271);
+            label1.Location = new Point(1350, 434);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(198, 49);
+            label1.Size = new Size(322, 78);
             label1.TabIndex = 0;
             label1.Text = "Đăng Nhập";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -51,33 +52,37 @@
             // 
             ShowPass.AutoSize = true;
             ShowPass.Font = new Font("Segoe UI", 13F);
-            ShowPass.Location = new Point(1035, 440);
+            ShowPass.Location = new Point(1682, 704);
+            ShowPass.Margin = new Padding(5, 5, 5, 5);
             ShowPass.Name = "ShowPass";
-            ShowPass.Size = new Size(175, 34);
+            ShowPass.Size = new Size(278, 51);
             ShowPass.TabIndex = 3;
             ShowPass.Text = "Hiện mật khẩu";
             ShowPass.UseVisualStyleBackColor = true;
             // 
             // Account
             // 
-            Account.Location = new Point(835, 357);
+            Account.Location = new Point(1357, 571);
+            Account.Margin = new Padding(5, 5, 5, 5);
             Account.Name = "Account";
-            Account.Size = new Size(194, 27);
+            Account.Size = new Size(313, 39);
             Account.TabIndex = 4;
             // 
             // Password
             // 
-            Password.Location = new Point(835, 440);
+            Password.Location = new Point(1357, 704);
+            Password.Margin = new Padding(5, 5, 5, 5);
             Password.Name = "Password";
-            Password.Size = new Size(194, 27);
+            Password.Size = new Size(313, 39);
             Password.TabIndex = 5;
             // 
             // buttonSignIn
             // 
             buttonSignIn.Font = new Font("Segoe UI", 15F);
-            buttonSignIn.Location = new Point(835, 494);
+            buttonSignIn.Location = new Point(1357, 790);
+            buttonSignIn.Margin = new Padding(5, 5, 5, 5);
             buttonSignIn.Name = "buttonSignIn";
-            buttonSignIn.Size = new Size(194, 55);
+            buttonSignIn.Size = new Size(315, 88);
             buttonSignIn.TabIndex = 6;
             buttonSignIn.Text = "Đăng Nhập";
             buttonSignIn.UseVisualStyleBackColor = true;
@@ -86,28 +91,31 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(664, 357);
+            label2.Location = new Point(1079, 571);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(141, 49);
+            label2.Size = new Size(229, 78);
             label2.TabIndex = 7;
             label2.Text = "Tài khoản";
             label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.Font = new Font("Segoe UI", 15F);
-            label3.Location = new Point(664, 424);
+            label3.Location = new Point(1079, 678);
+            label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
-            label3.Size = new Size(141, 49);
+            label3.Size = new Size(229, 78);
             label3.TabIndex = 8;
             label3.Text = "Mật khẩu";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // SignIn
+            // DangNhap
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(2564, 1559);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(buttonSignIn);
@@ -115,7 +123,8 @@
             Controls.Add(Account);
             Controls.Add(ShowPass);
             Controls.Add(label1);
-            Name = "SignIn";
+            Margin = new Padding(5, 5, 5, 5);
+            Name = "DangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignIn";
             ResumeLayout(false);
